@@ -107,6 +107,7 @@ footer .contact h2 {
 footer .contact p {
     margin: 5px 0;
 }
+
 /* Style for the hamburger menu button */
 .menu-btn {
     background: none;
@@ -155,7 +156,11 @@ footer .contact p {
 }
 
 .floating-menu nav ul li {
-    margin: 20px 0;
+    margin: 20px 0; /* Space between menu items */
+    border: 2px solid #00bfff; /* Add border around each menu item */
+    padding: 10px; /* Padding inside each menu item */
+    width: 100%; /* Make each item take full width */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's width */
 }
 
 .floating-menu nav ul li a {
@@ -163,6 +168,8 @@ footer .contact p {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
+    display: block; /* Make the link fill the entire list item */
+    text-align: center; /* Center the text horizontally */
 }
 
 /* When the menu is active */
