@@ -136,7 +136,7 @@ footer .contact p {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
     transform: translateX(100%);
@@ -151,7 +151,7 @@ footer .contact p {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .floating-menu nav ul li {
