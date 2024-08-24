@@ -107,3 +107,47 @@ footer .contact h2 {
 footer .contact p {
     margin: 5px 0;
 }
+/* Style for the three-dot menu button */
+.menu-btn {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #00bfff;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.nav-menu {
+    display: flex;
+}
+
+/* Hide the menu for mobile view */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block; /* Show the menu button */
+    }
+
+    .nav-menu {
+        display: none; /* Hide the menu */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #000;
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    .nav-menu.show {
+        display: flex; /* Show the menu when active */
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+}
